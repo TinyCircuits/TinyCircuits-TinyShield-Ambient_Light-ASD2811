@@ -1,7 +1,7 @@
 # TinyCircuits TinyShield Ambient Light Sensor Board
-# ASD2811 Rev1
+# ASD2811 Rev2
 
-These are the design files for the TinyCircuits ASD2811 Rev 1 PCB.  This is a TinyShield board (Square Version, 20mm x 20mm, or Circular 20mm diameter) that has a TAOS TSL2572 Ambient Light Sensor, local power supply and level shifters to connect between the TinyDuino and the accelerometer. 
+The design files are located under design_files/ for the TinyCircuits ASD2811 Rev 2 PCB.  This is a TinyShield board (Square Version, 20mm x 20mm, or Circular 20mm diameter) that has a TAOS TSL2572 Ambient Light Sensor, local power supply and level shifters to connect between the TinyDuino and the accelerometer. 
 
 Format is in Cadsoft Eagle format - Eagle version 6.2 was used for the original design.
 
