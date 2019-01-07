@@ -1,13 +1,16 @@
-//-------------------------------------------------------------------------------
-//  TinyCircuits Ambient Light TinyShield Example Sketch
-//  Using AMS TAOS TSL2572
-//
-//  Updated 25 October 2015
-//  TinyCircuits http://Tiny-Circuits.com
-//
-//  This example code is in the public domain.
-//
-//-------------------------------------------------------------------------------
+/*
+  TinyCircuits Ambient Light TinyShield Example Sketch
+  Using AMS TAOS TSL2572
+
+  This example code is in the public domain.
+
+  Written 25 October 2015
+  By Ken Burns
+  Modified 07 January 2019
+  By Hunter Hykes
+
+  https://TinyCircuits.com
+*/
 
 #include <Wire.h>
 
