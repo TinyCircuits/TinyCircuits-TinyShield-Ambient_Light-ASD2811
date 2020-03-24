@@ -21,6 +21,14 @@
 #define GAIN_16X 2
 #define GAIN_120X 3
 
+#if defined (ARDUINO_ARCH_AVR)
+#define SerialMonitorInterface Serial
+#include <SoftwareSerial.h>
+#elif defined(ARDUINO_ARCH_SAMD)
+#define SerialMonitorInterface SerialUSB
+#include "SoftwareSerialZero.h"
+#endif
+
 //only use this with 1x and 8x gain settings
 #define GAIN_DIVIDE_6 true 
 
@@ -29,7 +37,7 @@ int gain_val = 0;
 void setup()
 {
   Wire.begin();
-  Serial.begin(9600);
+  SerialMonitorInterface.begin(9600);
   TSL2572nit(GAIN_1X);
 }
 
@@ -37,8 +45,8 @@ void setup()
 void loop()
 {
   float AmbientLightLux = Tsl2572ReadAmbientLight();
-  Serial.print("Lux: ");
-  Serial.println(AmbientLightLux);
+  SerialMonitorInterface.print("Lux: ");
+  SerialMonitorInterface.println(AmbientLightLux);
   
   delay(1000);
 }
