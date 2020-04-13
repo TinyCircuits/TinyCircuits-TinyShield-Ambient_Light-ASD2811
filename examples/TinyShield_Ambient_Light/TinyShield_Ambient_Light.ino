@@ -26,7 +26,6 @@
 #include <SoftwareSerial.h>
 #elif defined(ARDUINO_ARCH_SAMD)
 #define SerialMonitorInterface SerialUSB
-#include "SoftwareSerialZero.h"
 #endif
 
 //only use this with 1x and 8x gain settings
@@ -99,4 +98,3 @@ float Tsl2572ReadAmbientLight()
   cpl = max(lux1, lux2);
   return max(cpl, 0.0);
 }
-
